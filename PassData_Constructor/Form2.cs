@@ -12,10 +12,12 @@ namespace PassData_Constructor
 	public class Form2 : System.Windows.Forms.Form
 	{
 		private System.Windows.Forms.Label label1;
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
-		private System.ComponentModel.Container components = null;
+        private ComboBox comboBox1;
+
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.Container components = null;
 
 		public Form2()
 		{
@@ -49,6 +51,7 @@ namespace PassData_Constructor
 		{
 			InitializeComponent();
 			label1.Text=strTextBox;
+			comboBox1.Text = strTextBox;
 		}
 
 		#region Windows Form Designer generated code
@@ -58,25 +61,42 @@ namespace PassData_Constructor
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.label1 = new System.Windows.Forms.Label();
-			this.SuspendLayout();
-			// 
-			// label1
-			// 
-			this.label1.Location = new System.Drawing.Point(40, 24);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(176, 32);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "label1";
-			// 
-			// Form2
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(280, 94);
-			this.Controls.Add(this.label1);
-			this.Name = "Form2";
-			this.Text = "Form2";
-			this.ResumeLayout(false);
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(40, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(176, 32);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.comboBox1.Location = new System.Drawing.Point(132, 24);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 1;
+            // 
+            // Form2
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.ClientSize = new System.Drawing.Size(280, 94);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label1);
+            this.Name = "Form2";
+            this.Text = "Form2";
+            this.ResumeLayout(false);
 
 		}
 		#endregion
